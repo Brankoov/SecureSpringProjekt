@@ -21,6 +21,7 @@ public class AuthController {
 
     @GetMapping("/register")
     public String showForm(Model model) {
+        System.out.println(">>> Öppnar register-sidan");
         model.addAttribute("userDto", new UserRegistrationDto());
         return "register";
     }
@@ -28,10 +29,14 @@ public class AuthController {
     @PostMapping("/register")
     public String registerUser(@Valid @ModelAttribute("userDto") UserRegistrationDto dto,
                                BindingResult result) {
-        if (result.hasErrors()) return "register";
+        if (result.hasErrors()) {
+            return "register";
+        }
+
         userService.register(dto);
-        return "redirect:/";
+        return "redirect:/login";
     }
+
 
     @GetMapping("/login")
     public String login() {

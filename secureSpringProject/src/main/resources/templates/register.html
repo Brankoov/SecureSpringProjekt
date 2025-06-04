@@ -2,35 +2,48 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Registrera dig</title>
+    <meta charset="UTF-8">
 </head>
 <body>
 <h1>Registrering</h1>
+
 <form th:action="@{/register}" method="post" th:object="${userDto}">
-    <label for="username">Användarnamn:</label>
-    <input type="text" th:field="*{username}" id="username" required />
     <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
-    <br/>
 
-    <label for="password">Lösenord:</label>
-    <input type="password" th:field="*{password}" id="password" required />
-    <br/>
+    <div>
+        <label for="username">Användarnamn:</label>
+        <input type="text" id="username" th:field="*{username}" required />
+        <div th:if="${#fields.hasErrors('username')}" th:errors="*{username}"></div>
+    </div>
 
-    <label for="role">Roll:</label>
-    <select th:field="*{role}" id="role">
-        <option value="USER">USER</option>
-        <option value="ADMIN">ADMIN</option>
-    </select>
-    <br/>
+    <div>
+        <label for="password">Lösenord:</label>
+        <input type="password" id="password" th:field="*{password}" required />
+        <div th:if="${#fields.hasErrors('password')}" th:errors="*{password}"></div>
+    </div>
 
-    <label>
-        <input type="checkbox" th:field="*{consentGiven}" id="consentGiven"/>
-        Jag samtycker till datalagring
-    </label>
-    <br/>
+    <div>
+        <label for="role">Roll:</label>
+        <select id="role" th:field="*{role}">
+            <option value="USER">USER</option>
+            <option value="ADMIN">ADMIN</option>
+        </select>
+        <div th:if="${#fields.hasErrors('role')}" th:errors="*{role}"></div>
+    </div>
 
-    <input type="submit" value="Registrera" />
+    <div>
+        <label>
+            <input type="checkbox" th:field="*{consentGiven}" />
+            Jag samtycker till datalagring
+        </label>
+    </div>
+
+    <div>
+        <input type="submit" value="Registrera" />
+    </div>
+
+    <p th:if="${#fields.hasErrors()}">Fel i formuläret, kontrollera fälten.</p>
 </form>
 
-<p th:if="${#fields.hasErrors()}">Fel i formuläret, kontrollera fälten.</p>
 </body>
 </html>
