@@ -27,7 +27,14 @@ public class UserService {
         AppUser user = new AppUser();
         user.setUsername(dto.getUsername());
         user.setPassword(passwordEncoder.encode(dto.getPassword()));
-        user.setRole(dto.getRole());
+
+        // Säkerställ att rollen börjar med "ROLE_"
+        String role = dto.getRole();
+        if (!role.startsWith("ROLE_")) {
+            role = "ROLE_" + role.toUpperCase(); // exempel: "user" → "ROLE_USER"
+        }
+        user.setRole(role);
+
         user.setConsentGiven(dto.isConsentGiven());
 
         userRepository.save(user);
