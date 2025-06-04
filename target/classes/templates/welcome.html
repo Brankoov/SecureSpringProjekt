@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Välkommen</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+<h1>Välkommen</h1>
+<p th:text="'Du är inloggad som: ' + ${#authentication.name}"></p>
+<a th:href="@{/user}">Användarsida</a>
+<div sec:authorize="hasRole('ADMIN')">
+    <a th:href="@{/admin}">Adminsida</a>
+</div>
+<form th:action="@{/logout}" method="post">
+    <input type="submit" value="Logga ut"/>
+</form>
+</body>
+</html>
