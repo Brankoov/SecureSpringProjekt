@@ -7,7 +7,14 @@
 </head>
 <body>
 <h1>Välkommen</h1>
-<p th:text="'Du är inloggad som: ' + ${#authentication.name}"></p>
+<p th:if="${#authorization.expression('isAuthenticated()')}"
+   th:text="'Du är inloggad som: ' + ${#authentication.name}"></p>
+
+<p th:if="${#authorization.expression('isAuthenticated()')}"
+   th:text="'Din roll: ' + ${#authentication.authorities[0].authority.startsWith('ROLE_')
+    ? #authentication.authorities[0].authority.substring(5)
+     : #authentication.authorities[0].authority}"></p>
+
 <a th:href="@{/user}">Användarsida</a>
 <div sec:authorize="hasRole('ADMIN')">
     <a th:href="@{/admin}">Adminsida</a>
