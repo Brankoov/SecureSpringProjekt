@@ -1,0 +1,37 @@
+<configuration>
+
+    <!-- Konsolloggar (för utveckling / test) -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- RollingFileAppender (för produktion) -->
+    <appender name="ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!-- Aktuell loggfil -->
+        <file>logs/app.log</file>
+
+        <!-- Hur rullade loggfiler döps (en ny per dag) -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>logs/app.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory> <!-- Sparar 30 dagar -->
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Root logger: alla loggar går hit om ingen annan logger matchar -->
+    <root level="INFO">
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="ROLLING" />
+    </root>
+
+    <!-- Logger för ditt eget paket med mer detaljer -->
+    <logger name="se.branko.secureSpringProject" level="DEBUG" additivity="false">
+        <appender-ref ref="ROLLING" />
+    </logger>
+
+</configuration>
