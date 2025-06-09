@@ -48,6 +48,10 @@ public class UserService {
         userRepository.deleteById(id);
         logger.info("Tog bort användare med id: {}", id);
     }
+    public AppUser getUserById(Long id) {
+        return userRepository.findById(id)
+                .orElseThrow(() -> new UserNotFoundException("Användare med id " + id + " finns inte"));
+    }
 
     public List<AppUser> getAllUsers() {
         logger.debug("Hämtar alla användare från databasen");

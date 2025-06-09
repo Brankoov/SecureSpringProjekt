@@ -39,7 +39,8 @@ public class SecurityConfig {
                 )
 
                 .exceptionHandling(exception -> exception
-                        .accessDeniedPage("/access-denied")
+                        .accessDeniedHandler((request, response, accessDeniedException) ->
+                                response.sendError(403, "Access Denied"))
                 );
 
 
