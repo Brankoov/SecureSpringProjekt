@@ -29,6 +29,10 @@ public class AuthController {
     @PostMapping("/register")
     public String registerUser(@Valid @ModelAttribute("userDto") UserRegistrationDto dto,
                                BindingResult result) {
+        if (userService.usernameExists(dto.getUsername())) {
+            result.rejectValue("username", null, "Användarnamnet är redan taget");
+        }
+
         if (result.hasErrors()) {
             return "register";
         }
@@ -36,7 +40,6 @@ public class AuthController {
         userService.register(dto);
         return "redirect:/login";
     }
-
 
     @GetMapping("/login")
     public String login() {

@@ -39,6 +39,10 @@ public class UserService {
         userRepository.save(user);
         logger.info("Registrerat användare: {}", dto.getUsername());
     }
+    public boolean usernameExists(String username) {
+        return userRepository.existsByUsername(username);
+    }
+
 
     public void deleteUser(Long id) {
         if (!userRepository.existsById(id)) {
