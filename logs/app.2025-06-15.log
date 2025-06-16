@@ -1,0 +1,91 @@
+2025-06-15 12:17:59 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2d19h47m39s687ms900µs200ns).
+2025-06-15 12:17:59 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5c07321d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-06-15 12:17:59 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@379003bb (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-06-15 12:17:59 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@182ddbc4 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-06-15 12:17:59 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7d5f8506 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-06-15 12:17:59 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4f0b10ef (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-06-15 12:17:59 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@78b14f6e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-06-15 12:17:59 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@eb44847 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-06-15 12:17:59 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@f429b22 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-06-15 12:17:59 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@18d97e4d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-06-15 12:17:59 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6ae18807 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-06-15 12:19:44 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@463b136c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-06-15 12:19:49 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@e433dee (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-06-15 12:19:54 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@68042d91 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-06-15 12:19:59 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@76bae38e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-06-15 12:20:04 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@73dc9550 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-06-15 12:20:09 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@64676a88 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-06-15 12:20:14 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@c418b95 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-06-15 12:20:19 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1b20e958 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-06-15 12:20:19 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=49s583ms221µs700ns).
+2025-06-15 12:20:24 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@44ccf39e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-06-15 12:20:29 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5ccbcf0c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-06-15 13:03:44 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m20s156ms761µs100ns).
+2025-06-15 13:03:44 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3bb308e6 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-06-15 13:03:44 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6c0bea8e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-06-15 13:03:44 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2ca3b2b1 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-06-15 13:03:44 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@f747bfb (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-06-15 13:03:44 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@acbf709 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-06-15 13:03:44 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@39a73344 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-06-15 13:03:44 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@8a038fb (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-06-15 13:03:44 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@24a731b7 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-06-15 13:03:44 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7181e995 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-06-15 13:03:44 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@71bcd9f2 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2025-06-15 13:05:21 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m45s785ms903µs700ns).
+2025-06-15 13:11:38 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-15 13:11:38 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-15 13:11:38 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-15 13:11:38 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-15 13:11:38 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-06-15 14:34:46 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-06-15 14:34:46 [restartedMain] INFO  s.b.s.SecureSpringProjectApplication - Starting SecureSpringProjectApplication using Java 22.0.2 with PID 11836 (C:\Users\banne\Downloads\secureSpringProject\secureSpringProject\target\classes started by banne in C:\Users\banne\Downloads\secureSpringProject)
+2025-06-15 14:34:46 [restartedMain] DEBUG s.b.s.SecureSpringProjectApplication - Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-06-15 14:34:46 [restartedMain] INFO  s.b.s.SecureSpringProjectApplication - No active profile set, falling back to 1 default profile: "default"
+2025-06-15 14:34:46 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-15 14:34:46 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-15 14:34:46 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-15 14:34:46 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 1 JPA repository interface.
+2025-06-15 14:34:47 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-15 14:34:47 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-15 14:34:47 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-15 14:34:47 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-15 14:34:47 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-15 14:34:47 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1040 ms
+2025-06-15 14:34:47 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-15 14:34:47 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-15 14:34:47 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-06-15 14:34:47 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-15 14:34:47 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-15 14:34:48 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@21ea423e
+2025-06-15 14:34:48 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-15 14:34:48 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-15 14:34:48 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-06-15 14:34:48 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-15 14:34:48 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-15 14:34:49 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-15 14:34:49 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-15 14:34:49 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-06-15 14:34:49 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-06-15 14:34:49 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-06-15 14:34:49 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-15 14:34:49 [restartedMain] INFO  s.b.s.SecureSpringProjectApplication - Started SecureSpringProjectApplication in 4.058 seconds (process running for 4.873)
+2025-06-15 14:35:08 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-15 14:35:08 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-15 14:35:08 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-06-15 14:35:18 [http-nio-8080-exec-10] INFO  s.b.s.s.CustomUserDetailsService - Försöker ladda användare: Branko.Admin
+2025-06-15 14:35:19 [http-nio-8080-exec-10] INFO  s.b.s.s.CustomUserDetailsService - Användare hittad: Branko.Admin
+2025-06-15 14:35:28 [http-nio-8080-exec-5] INFO  s.b.s.s.CustomUserDetailsService - Försöker ladda användare: Branko.Admin
+2025-06-15 14:35:28 [http-nio-8080-exec-5] INFO  s.b.s.s.CustomUserDetailsService - Användare hittad: Branko.Admin
+2025-06-15 14:35:36 [http-nio-8080-exec-5] DEBUG s.b.s.service.UserService - Hämtar alla användare från databasen
+2025-06-15 14:35:48 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-15 14:35:48 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-15 14:35:48 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-15 14:35:48 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-15 14:35:48 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

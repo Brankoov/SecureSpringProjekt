@@ -19,23 +19,23 @@ public class AdminUserController {
         this.userService = userService;
     }
 
-    // Visa alla användare
+
     @GetMapping
     public String getAllUsers(Model model, Principal principal) {
         List<AppUser> users = userService.getAllUsers();
         model.addAttribute("users", users);
         model.addAttribute("currentUsername", principal.getName());
-        return "admin-users";  // Thymeleaf-sidan, t.ex. admin-admin-users.html
+        return "admin-users";
     }
 
-    // Ta bort användare
+
     @PostMapping("/delete/{id}")
     public String deleteUser(@PathVariable Long id, Principal principal, Model model) {
         AppUser userToDelete = userService.getUserById(id);
 
         if (userToDelete.getUsername().equals(principal.getName())) {
             model.addAttribute("selfDeleteError", true);
-            // Visa samma sida igen med felmeddelande
+
             List<AppUser> users = userService.getAllUsers();
             model.addAttribute("users", users);
             model.addAttribute("currentUsername", principal.getName());

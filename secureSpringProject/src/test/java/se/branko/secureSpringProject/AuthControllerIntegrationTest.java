@@ -6,7 +6,9 @@ import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMock
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.web.servlet.MockMvc;
+import se.branko.secureSpringProject.repository.UserRepository;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.csrf;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
@@ -18,6 +20,9 @@ class AuthControllerIntegrationTest {
 
     @Autowired
     private MockMvc mockMvc;
+
+    @Autowired
+    private UserRepository userRepository;
 
     @Test
     void shouldShowRegisterForm() throws Exception {
@@ -44,6 +49,7 @@ class AuthControllerIntegrationTest {
                 .andExpect(status().is3xxRedirection())
                 .andExpect(redirectedUrl("/login"));
     }
+
     @Test
     void shouldReturnToRegisterOnValidationError() throws Exception {
         mockMvc.perform(post("/register")
@@ -54,5 +60,20 @@ class AuthControllerIntegrationTest {
                         .with(csrf()))
                 .andExpect(status().isOk())
                 .andExpect(view().name("register"));
+    }
+
+    @Test
+    void shouldRegisterUserInDatabase() throws Exception {
+        String username = "saveduser";
+        mockMvc.perform(post("/register")
+                        .param("username", username)
+                        .param("password", "Password12!!")
+                        .param("role", "USER")
+                        .param("consentGiven", "true")
+                        .with(csrf()))
+                .andExpect(status().is3xxRedirection())
+                .andExpect(redirectedUrl("/login"));
+
+        assertTrue(userRepository.findByUsername(username).isPresent());
     }
 }
